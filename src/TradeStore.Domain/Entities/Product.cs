@@ -1,3 +1,5 @@
+using TradeStore.Domain.ValueObjects;
+
 namespace TradeStore.Domain.Entities;
 
 public class Product

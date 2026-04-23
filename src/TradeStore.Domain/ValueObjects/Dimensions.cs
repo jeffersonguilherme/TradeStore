@@ -1,6 +1,6 @@
-namespace TradeStore.Domain.Entities;
+namespace TradeStore.Domain.ValueObjects;
 
-public class Dimensions
+public record Dimensions
 {
     public decimal Length { get; private set; }
     public decimal Width { get; private set; }
