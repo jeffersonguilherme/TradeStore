@@ -1,4 +1,4 @@
-namespace TradeStore.Domain.ValuesObjects;
+namespace TradeStore.Domain.ValueObjects;
 
 public record Dimensions
 {

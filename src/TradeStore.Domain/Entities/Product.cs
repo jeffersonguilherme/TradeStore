@@ -1,4 +1,4 @@
-using TradeStore.Domain.ValuesObjects;
+using TradeStore.Domain.ValueObjects;
 
 namespace TradeStore.Domain.Entities;
 
