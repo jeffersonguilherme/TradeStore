@@ -1,4 +1,4 @@
-namespace TradeStore.Application.DTOs.Product;
+namespace TradeStore.Application.DTOs.ValueObjects;
 public class DimensionsDto
 {
     public decimal Length { get; set; }
