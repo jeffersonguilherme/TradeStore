@@ -9,6 +9,6 @@ public class ProductSummaryDto
     public string CodSap { get; set; } = string.Empty;
     public string Notes { get; set; } = string.Empty;
     public string ImgUrl { get; set; } = string.Empty;
-    public string CategoryName { get; set; } = string.Empty;
-    public string TypeName { get; set; } = string.Empty;
+    public Guid CategoryId { get; set; } 
+    public Guid TypeId { get; set; }
 }

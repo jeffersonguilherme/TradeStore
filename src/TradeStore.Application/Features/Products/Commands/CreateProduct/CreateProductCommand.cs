@@ -4,4 +4,4 @@ using TradeStore.Application.Responses;
 
 namespace TradeStore.Application.Features.Products.Commands.CreateProduct;
 
-public record CreateProductCommand(CreateProductDto Dto) : IRequest<ResponseModel<ProductDetailDto>>;
+public record CreateProductCommand(CreateProductDto Dto) : IRequest<ResponseModel<ProductSummaryDto>>;
