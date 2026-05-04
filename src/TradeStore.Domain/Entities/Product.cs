@@ -25,7 +25,7 @@ public class Product
 
     protected Product(){}
 
-    public Product(string codTrade, 
+    public static Product Create(string codTrade, 
                     string description, 
                     string codNcm,
                     string codSap,
@@ -43,7 +43,37 @@ public class Product
         if(categoryId == Guid.Empty) throw new ArgumentException("Category is reqquired");
         if(typeId == Guid.Empty) throw new ArgumentException("Type is reqquired");
 
-        Id = Guid.NewGuid();
+        var product = new Product
+        {
+            Id = Guid.NewGuid(),
+            CodTrade = codTrade,
+            Description = description,
+            CodNcm = codNcm,
+            CodSap = codSap,
+            Notes = notes,
+            ImgUrl = imgUrl,
+            Dimensions = dimensions,
+            CategoryId = categoryId,
+            TypeId = typeId,
+            AllowedLocations = allowedLocations ?? new(),
+            DateCreation = DateTime.UtcNow,
+            DateUpdate = DateTime.UtcNow,
+        };
+        return product;
+    }
+
+    public void Update(
+        string codTrade,
+        string description,
+        string codNcm,
+        string codSap,
+        string notes,
+        string imgUrl,
+        Dimensions dimensions,
+        Guid categoryId,
+        Guid typeId,
+        List<Location> allowedLocations)
+    {
         CodTrade = codTrade;
         Description = description;
         CodNcm = codNcm;
@@ -53,9 +83,9 @@ public class Product
         Dimensions = dimensions;
         CategoryId = categoryId;
         TypeId = typeId;
-        AllowedLocations = allowedLocations ?? new();
-        DateCreation = DateTime.UtcNow;
+        AllowedLocations = allowedLocations;
         DateUpdate = DateTime.UtcNow;
+
     }
 
 }
