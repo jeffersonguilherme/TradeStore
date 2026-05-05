@@ -24,7 +24,7 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
 
         var dimensions = _mapper.Map<Dimensions>(dto.Dimensions);
 
-        var product = new Product(
+        var product = Product.Create(
              dto.CodTrade,
              dto.Description,
              dto.CodNcm,
