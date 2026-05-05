@@ -21,11 +21,11 @@ public class Product
     public Guid TypeId { get; private set; }
     public ProductType Type { get; private set; } = null!;
     public DateTime DateCreation { get; private set; }
-    public DateTime DateUpdate { get; private set; }
+    public DateTime? DateUpdate { get; private set; }
 
     protected Product(){}
 
-    public Product(string codTrade, 
+    public static Product Create(string codTrade, 
                     string description, 
                     string codNcm,
                     string codSap,
@@ -43,7 +43,44 @@ public class Product
         if(categoryId == Guid.Empty) throw new ArgumentException("Category is reqquired");
         if(typeId == Guid.Empty) throw new ArgumentException("Type is reqquired");
 
-        Id = Guid.NewGuid();
+        var product = new Product
+        {
+            Id = Guid.NewGuid(),
+            CodTrade = codTrade,
+            Description = description,
+            CodNcm = codNcm,
+            CodSap = codSap,
+            Notes = notes,
+            ImgUrl = imgUrl,
+            Dimensions = dimensions,
+            CategoryId = categoryId,
+            TypeId = typeId,
+            AllowedLocations = allowedLocations ?? new(),
+            DateCreation = DateTime.UtcNow,
+            DateUpdate = DateTime.UtcNow,
+        };
+        return product;
+    }
+
+    public void Update(
+        string codTrade,
+        string description,
+        string codNcm,
+        string codSap,
+        string notes,
+        string imgUrl,
+        Dimensions dimensions,
+        Guid categoryId,
+        Guid typeId,
+        List<Location> allowedLocations)
+    {
+
+        if(string.IsNullOrWhiteSpace(codTrade)) throw new ArgumentException("CodTrade is required");
+        if(string.IsNullOrEmpty(codNcm)) throw new ArgumentException("CodNcm is required");
+        if(dimensions == null) throw new ArgumentException("Dimensions is required");
+        if(categoryId == Guid.Empty) throw new ArgumentException("Category is reqquired");
+        if(typeId == Guid.Empty) throw new ArgumentException("Type is reqquired");
+        
         CodTrade = codTrade;
         Description = description;
         CodNcm = codNcm;
@@ -53,9 +90,9 @@ public class Product
         Dimensions = dimensions;
         CategoryId = categoryId;
         TypeId = typeId;
-        AllowedLocations = allowedLocations ?? new();
-        DateCreation = DateTime.UtcNow;
+        AllowedLocations = allowedLocations;
         DateUpdate = DateTime.UtcNow;
+
     }
 
 }

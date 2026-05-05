@@ -1,0 +1,12 @@
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\bin\Debug\net8.0\TradeStore.Domain.deps.json
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\bin\Debug\net8.0\TradeStore.Domain.dll
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\bin\Debug\net8.0\TradeStore.Domain.pdb
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\TradeStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\TradeStore.Domain.AssemblyInfoInputs.cache
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\TradeStore.Domain.AssemblyInfo.cs
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\TradeStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\TradeStore.Domain.sourcelink.json
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\TradeStore.Domain.dll
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\refint\TradeStore.Domain.dll
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\TradeStore.Domain.pdb
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Domain\obj\Debug\net8.0\ref\TradeStore.Domain.dll

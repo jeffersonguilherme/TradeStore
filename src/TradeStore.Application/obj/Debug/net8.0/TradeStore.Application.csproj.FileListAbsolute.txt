@@ -1,0 +1,6 @@
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.csproj.AssemblyReference.cache
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.AssemblyInfoInputs.cache
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.AssemblyInfo.cs
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.sourcelink.json
