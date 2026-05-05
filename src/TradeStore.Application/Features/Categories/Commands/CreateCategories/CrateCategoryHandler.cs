@@ -6,7 +6,7 @@ using TradeStore.Domain.Repositories;
 using TradeStore.Domain.Entities;
 
 
-namespace TradeStore.Application.Features.Categories.Commands.CreateCategory;
+namespace TradeStore.Application.Features.Categories.Commands.CreateCategories;
 
 public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand, ResponseModel<CategoryResponseDto>>
 {
