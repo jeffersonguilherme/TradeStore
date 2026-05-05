@@ -23,7 +23,17 @@ public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand, Resp
     {
         var dto = request.Dto;
 
-        var category = Category.Create(dto.NomeCategory);
+        var existingCategory = await _repository.GetByNameAsync(dto.NameCategory.Trim().ToLower());
+
+        if(existingCategory is not null)
+        {
+            return new ResponseModel<CategoryResponseDto>
+            {
+                Mensagem = "Category already exists"
+            };
+        }
+
+        var category = Category.Create(dto.NameCategory);
 
         await _repository.AddAsync(category);
         var categoryResponse = _mapper.Map<CategoryResponseDto>(category);
