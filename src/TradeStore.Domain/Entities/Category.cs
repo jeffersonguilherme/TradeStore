@@ -4,13 +4,32 @@ public class Category
 {
     public Guid Id { get; private set; }
     public string NameCategory { get; private set; } = string.Empty;
+    public DateTime DateCreation { get; private set; }
+    public DateTime? DateUpdate { get; private set; }
     
     protected Category(){ }
 
-    public Category(string nameCategory)
+    public static Category Create(string nameCategory)
     {
         if(string.IsNullOrWhiteSpace(nameCategory)) throw new ArgumentException("Name is required");
 
-        NameCategory = nameCategory;
+        var category = new Category
+        {
+            Id = Guid.NewGuid(),
+            NameCategory = nameCategory,
+            DateCreation = DateTime.UtcNow
+        };
+        return category;
+    }
+
+    public void Update(string nameCategory)
+    {
+        if(string.IsNullOrWhiteSpace(nameCategory)) throw new ArgumentException("Name is required");
+
+        if(NameCategory == nameCategory)
+            return;
+
+            NameCategory = nameCategory;
+            DateUpdate = DateTime.UtcNow;
     }
 }

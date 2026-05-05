@@ -21,7 +21,7 @@ public class Product
     public Guid TypeId { get; private set; }
     public ProductType Type { get; private set; } = null!;
     public DateTime DateCreation { get; private set; }
-    public DateTime DateUpdate { get; private set; }
+    public DateTime? DateUpdate { get; private set; }
 
     protected Product(){}
 
@@ -74,6 +74,13 @@ public class Product
         Guid typeId,
         List<Location> allowedLocations)
     {
+
+        if(string.IsNullOrWhiteSpace(codTrade)) throw new ArgumentException("CodTrade is required");
+        if(string.IsNullOrEmpty(codNcm)) throw new ArgumentException("CodNcm is required");
+        if(dimensions == null) throw new ArgumentException("Dimensions is required");
+        if(categoryId == Guid.Empty) throw new ArgumentException("Category is reqquired");
+        if(typeId == Guid.Empty) throw new ArgumentException("Type is reqquired");
+        
         CodTrade = codTrade;
         Description = description;
         CodNcm = codNcm;
