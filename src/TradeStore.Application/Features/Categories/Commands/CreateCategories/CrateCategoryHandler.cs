@@ -29,7 +29,8 @@ public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand, Resp
         {
             return new ResponseModel<CategoryResponseDto>
             {
-                Mensagem = "Category already exists"
+                Mensagem = "Category already exists",
+                Status = false
             };
         }
 

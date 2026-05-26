@@ -4,4 +4,4 @@ using TradeStore.Application.Responses;
 
 namespace TradeStore.Application.Features.Categories.Commands.UpdateCategories;
 
-public record UpdateCategoriesCommand(Guid id, UpdateCategoryDto Dto) : IRequest<ResponseModel<CategoryResponseDto>>;
+public record UpdateCategoriesCommand(Guid Id, UpdateCategoryDto Dto) : IRequest<ResponseModel<CategoryResponseDto>>;

@@ -1,4 +1,3 @@
-using System.Linq.Expressions;
 using AutoMapper;
 using MediatR;
 using TradeStore.Application.DTOs.Product;
@@ -70,7 +69,6 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
                 Mensagem = "Type not exists"
             };
         }
-
 
         var dimensions = _mapper.Map<Dimensions>(dto.Dimensions);
 

@@ -7,9 +7,9 @@ public class DeleteCategoryHandler : IRequestHandler<DeleteCategoryCommand, bool
 {
     private readonly ICategoryRepository _repository;
 
-    public DeleteCategoryHandler(ICategoryRepository respository)
+    public DeleteCategoryHandler(ICategoryRepository repository)
     {
-        _repository = respository;
+        _repository = repository;
     }
 
     public async Task<bool> Handle(DeleteCategoryCommand request, CancellationToken cancellationToken)
