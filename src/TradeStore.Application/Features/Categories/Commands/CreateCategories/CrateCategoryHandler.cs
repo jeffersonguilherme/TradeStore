@@ -23,9 +23,9 @@ public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand, Resp
     {
         var dto = request.Dto;
 
-        var existingCategory = await _repository.GetByNameAsync(dto.NameCategory.Trim().ToLower());
+        var existingCategory = await _repository.ExistsAsync(dto.NameCategory.Trim().ToLower());
 
-        if(existingCategory is not null)
+        if(existingCategory)
         {
             return new ResponseModel<CategoryResponseDto>
             {
