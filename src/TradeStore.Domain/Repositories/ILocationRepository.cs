@@ -4,6 +4,7 @@ namespace TradeStore.Domain.Repositories;
 
 public interface ILocationRepository
 {
+    Task<bool> ExistsAsync(string name);
     Task AddAsync(Location location);
     Task<Location> GetByIdAsync(Guid id);
     Task<List<Location>> GetByIdsAsync(List<Guid> ids);
