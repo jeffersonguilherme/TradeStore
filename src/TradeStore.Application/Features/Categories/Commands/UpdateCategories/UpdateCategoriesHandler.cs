@@ -19,12 +19,13 @@ public class UpdateCategoriesHandler : IRequestHandler<UpdateCategoriesCommand, 
 
     public async Task<ResponseModel<CategoryResponseDto>> Handle(UpdateCategoriesCommand request, CancellationToken cancellationToken)
     {
-        var category = await _repository.GetByIdAsync(request.id);
+        var category = await _repository.GetByIdAsync(request.Id);
 
         if(category is null)
             return new ResponseModel<CategoryResponseDto>
             {
-                Mensagem = "Categoria não encontrada"
+                Mensagem = "Categoria não encontrada",
+                Status = false
             };
         
         category.Update(request.Dto.NameCategory);
@@ -35,7 +36,7 @@ public class UpdateCategoriesHandler : IRequestHandler<UpdateCategoriesCommand, 
         return new ResponseModel<CategoryResponseDto>
         {
             Dados = categoryResponse,
-            Mensagem = "Categoria autalizada com sucesso"
+            Mensagem = "Categoria atualizada com sucesso"
         };
     }
 }
