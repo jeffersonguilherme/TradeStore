@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
 using TradeStore.Domain.Entities;
 
 namespace TradeStore.Infrastructure.Data;

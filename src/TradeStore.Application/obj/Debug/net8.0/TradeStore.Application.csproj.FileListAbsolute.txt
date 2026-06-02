@@ -4,3 +4,13 @@ C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\De
 C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.AssemblyInfo.cs
 C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.csproj.CoreCompileInputs.cache
 C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.sourcelink.json
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\bin\Debug\net8.0\TradeStore.Application.deps.json
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\bin\Debug\net8.0\TradeStore.Application.dll
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\bin\Debug\net8.0\TradeStore.Application.pdb
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\bin\Debug\net8.0\TradeStore.Domain.dll
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\bin\Debug\net8.0\TradeStore.Domain.pdb
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeSto.7FA732B8.Up2Date
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.dll
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\refint\TradeStore.Application.dll
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\TradeStore.Application.pdb
+C:\Users\Jefferson\Documents\GitHub\TradeStore\src\TradeStore.Application\obj\Debug\net8.0\ref\TradeStore.Application.dll
