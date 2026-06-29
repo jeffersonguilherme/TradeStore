@@ -5,9 +5,10 @@ namespace TradeStore.Domain.Repositories;
 public interface IProductRepository
 {
     Task<bool> ExistAsync(string codTrade);
+    Task<bool> ExistCodTradeAsync(string codTrade, Guid excludeId);
     Task AddAsync(Product product);
-    Task<Product> GetByIdAsync(Guid id);
-    Task<(IEnumerable<Product> items, int TotalItems)> GetByCodTrade(string codTrade, int pageNumber, int pageSize);
+    Task<Product?> GetByIdAsync(Guid id);
+    Task<Product?> GetByCodTrade(string codTrade);
     Task<(IEnumerable<Product> items, int TotalItems)> GetByLocation(Guid locationId, int pageNumber, int pageSize);
     Task<(IEnumerable<Product> items, int TotalItems)> GetByCategory(Guid categoryId, int pageNumber, int pageSize);
     Task<(IEnumerable<Product> items, int TotalItems)> GetAllAsync(int pageNumber, int pageSize);
