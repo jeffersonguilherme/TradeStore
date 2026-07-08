@@ -4,6 +4,7 @@ namespace TradeStore.Domain.Repositories;
 
 public interface IProducTypeRepository
 {
+    Task<bool> ExistsAsync(string name);
     Task AddAsync(ProductType productType);
     Task<ProductType> GetByIdAsync(Guid id);
     Task<(IEnumerable<ProductType> Items, int TotalItems)> GetAllAsync(int pageNumber, int pageSize);

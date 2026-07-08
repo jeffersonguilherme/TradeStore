@@ -2,5 +2,5 @@ namespace TradeStore.Application.DTOs.ProductTypes;
 
 public class CreateProductTypeDto
 {
-    public string ProductType { get; set; } = string.Empty;
+    public string NameType { get; set; } = string.Empty;
 }
