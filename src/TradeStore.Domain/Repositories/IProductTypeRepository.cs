@@ -2,7 +2,7 @@ using TradeStore.Domain.Entities;
 
 namespace TradeStore.Domain.Repositories;
 
-public interface IProducTypeRepository
+public interface IProductTypeRepository
 {
     Task<bool> ExistsAsync(string name);
     Task AddAsync(ProductType productType);

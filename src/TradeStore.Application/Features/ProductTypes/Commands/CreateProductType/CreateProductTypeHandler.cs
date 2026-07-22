@@ -9,10 +9,10 @@ namespace TradeStore.Application.Features.ProductTypes.Commands.CreateProductTyp
 
 public class CreateProductTypeHandler : IRequestHandler<CreateProductTypeCommand, ResponseModel<ProductTypeResponseDto>>
 {
-    private readonly IProducTypeRepository _repository;
+    private readonly IProductTypeRepository _repository;
     private readonly IMapper _mapper;
 
-    public CreateProductTypeHandler(IProducTypeRepository repository, IMapper mapper)
+    public CreateProductTypeHandler(IProductTypeRepository repository, IMapper mapper)
     {
         _repository = repository;
         _mapper = mapper;
@@ -34,7 +34,6 @@ public class CreateProductTypeHandler : IRequestHandler<CreateProductTypeCommand
         }
 
         var productType = ProductType.Create(requestDto.NameType);
-
         await _repository.AddAsync(productType);
         var productTypeResponse = _mapper.Map<ProductTypeResponseDto>(productType);
 
