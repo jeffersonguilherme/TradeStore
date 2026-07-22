@@ -21,9 +21,9 @@ public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand, Resp
 
     public async Task<ResponseModel<CategoryResponseDto>> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
     {
-        var dto = request.Dto;
+        var requestDto = request.Dto;
 
-        var existingCategory = await _repository.ExistsAsync(dto.NameCategory.Trim().ToLower());
+        var existingCategory = await _repository.ExistsAsync(requestDto.NameCategory.Trim().ToLower());
 
         if(existingCategory)
         {
@@ -34,7 +34,7 @@ public class CreateCategoryHandler : IRequestHandler<CreateCategoryCommand, Resp
             };
         }
 
-        var category = Category.Create(dto.NameCategory);
+        var category = Category.Create(requestDto.NameCategory);
 
         await _repository.AddAsync(category);
         var categoryResponse = _mapper.Map<CategoryResponseDto>(category);

@@ -26,7 +26,7 @@ public class GetCategoryByIdHandler : IRequestHandler<GetCategoryByIdQuery, Resp
             return new ResponseModel<CategoryResponseDto?>
             {
                 Dados = null,
-                Mensagem = "Categoria não encontrada",
+                Mensagem = "Category not found",
                 Status = false
             };
 
@@ -36,7 +36,7 @@ public class GetCategoryByIdHandler : IRequestHandler<GetCategoryByIdQuery, Resp
         return new ResponseModel<CategoryResponseDto?>
         {
           Dados = categoryDto,
-          Mensagem = "Categoria encontrada com sucesso",
+          Mensagem = "Category successfully found",
           Status = true  
         };
     }
