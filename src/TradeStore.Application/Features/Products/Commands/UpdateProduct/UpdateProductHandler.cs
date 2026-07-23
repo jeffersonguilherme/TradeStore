@@ -11,11 +11,11 @@ public class UpdateProductHandler : IRequestHandler<UpdateProductCommand, Respon
 {
     private readonly ICategoryRepository _respositoryCategory;
     private readonly ILocationRepository _respositoryLocation;
-    private readonly IProducTypeRepository _repositoryType;
+    private readonly IProductTypeRepository _repositoryType;
     private readonly IProductRepository _repositoryProduct;
     private readonly IMapper _mapper;
 
-    public UpdateProductHandler(ICategoryRepository respositoryCategory, ILocationRepository respositoryLocation, IProducTypeRepository repositoryType, IProductRepository repositoryProduct, IMapper mapper)
+    public UpdateProductHandler(ICategoryRepository respositoryCategory, ILocationRepository respositoryLocation, IProductTypeRepository repositoryType, IProductRepository repositoryProduct, IMapper mapper)
     {
         _respositoryCategory = respositoryCategory;
         _respositoryLocation = respositoryLocation;

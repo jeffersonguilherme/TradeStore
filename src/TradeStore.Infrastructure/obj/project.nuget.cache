@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VBy0V8Ymp0c=",
+  "dgSpecHash": "o4Vy5QZrTYY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Jefferson\\Documents\\GitHub\\TradeStore\\src\\TradeStore.Infrastructure\\TradeStore.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Jefferson\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\Jefferson\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\mediatr\\14.1.0\\mediatr.14.1.0.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
@@ -20,12 +21,12 @@
     "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.7\\microsoft.data.sqlclient.5.1.7.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.2\\microsoft.data.sqlclient.sni.runtime.5.1.2.nupkg.sha512",
-    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.27\\microsoft.entityframeworkcore.8.0.27.nupkg.sha512",
-    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.27\\microsoft.entityframeworkcore.abstractions.8.0.27.nupkg.sha512",
-    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.27\\microsoft.entityframeworkcore.analyzers.8.0.27.nupkg.sha512",
-    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.27\\microsoft.entityframeworkcore.design.8.0.27.nupkg.sha512",
-    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.27\\microsoft.entityframeworkcore.relational.8.0.27.nupkg.sha512",
-    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.27\\microsoft.entityframeworkcore.sqlserver.8.0.27.nupkg.sha512",
+    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.29\\microsoft.entityframeworkcore.8.0.29.nupkg.sha512",
+    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.29\\microsoft.entityframeworkcore.abstractions.8.0.29.nupkg.sha512",
+    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.29\\microsoft.entityframeworkcore.analyzers.8.0.29.nupkg.sha512",
+    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.29\\microsoft.entityframeworkcore.design.8.0.29.nupkg.sha512",
+    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.29\\microsoft.entityframeworkcore.relational.8.0.29.nupkg.sha512",
+    "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.29\\microsoft.entityframeworkcore.sqlserver.8.0.29.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
     "C:\\Users\\Jefferson\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -85,7 +86,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'AutoMapper' 12.0.1 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net8.0"
