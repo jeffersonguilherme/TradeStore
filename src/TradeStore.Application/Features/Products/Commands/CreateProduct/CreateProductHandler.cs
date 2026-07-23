@@ -13,13 +13,13 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
     private readonly IProductRepository _repository;
     private readonly ILocationRepository _locationRepository;
     private readonly ICategoryRepository _categoryRepository;
-    private readonly IProducTypeRepository _typeRepository;
+    private readonly IProductTypeRepository _typeRepository;
     private readonly IMapper _mapper;
     public CreateproductHandler(IProductRepository repository,
                                 IMapper mapper,
                                 ILocationRepository locationRepository,
                                 ICategoryRepository categoryRepository,
-                                IProducTypeRepository typeRepository)
+                                IProductTypeRepository typeRepository)
     {
         _repository = repository;
         _locationRepository = locationRepository;

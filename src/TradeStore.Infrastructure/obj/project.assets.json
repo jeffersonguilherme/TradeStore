@@ -76,6 +76,23 @@
           }
         }
       },
+      "FluentValidation.DependencyInjectionExtensions/12.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/net8.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -448,11 +465,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/8.0.27": {
+      "Microsoft.EntityFrameworkCore/8.0.29": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.27",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.27",
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.29",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.29",
           "Microsoft.Extensions.Caching.Memory": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
@@ -470,7 +487,7 @@
           "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/8.0.27": {
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.29": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -483,7 +500,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.27": {
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.29": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -492,12 +509,12 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/8.0.27": {
+      "Microsoft.EntityFrameworkCore.Design/8.0.29": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.27",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.29",
           "Microsoft.Extensions.DependencyModel": "8.0.2",
           "Mono.TextTemplating": "2.2.1"
         },
@@ -515,10 +532,10 @@
           "build/net8.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.27": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.29": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.27",
+          "Microsoft.EntityFrameworkCore": "8.0.29",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -532,11 +549,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/8.0.27": {
+      "Microsoft.EntityFrameworkCore.SqlServer/8.0.29": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.7",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.27",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.29",
           "System.Formats.Asn1": "8.0.2"
         },
         "compile": {
@@ -1498,6 +1515,7 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.1.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
           "MediatR": "14.1.0",
           "TradeStore.Domain": "1.0.0"
         },
@@ -1587,6 +1605,21 @@
         "fluentvalidation.nuspec",
         "lib/net8.0/FluentValidation.dll",
         "lib/net8.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/12.1.1": {
+      "sha512": "D0VXh4dtjjX2aQizuaa0g6R8X3U1JaVqJPfGCvLwZX9t/O2h7tkpbitbadQMfwcgSPdDbI2vDxuwRMv/Uf9dHA==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/12.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/net8.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/net8.0/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2243,10 +2276,10 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.EntityFrameworkCore/8.0.27": {
-      "sha512": "fe3vhlibOcspurgPucQQW4KGC3Z2aj3hafb68AKxFVFawzT5+x6FA4NGzLrWMDs682A3uTodd0hOHX0ZUDwdzA==",
+    "Microsoft.EntityFrameworkCore/8.0.29": {
+      "sha512": "+4Md9S8HcJEkoatsVTiYrF621StlxS8bpnQMSYYbAVRnMGHWLhtlbgqTYdO8+zxuyIqAjiFAYtWr/oJ9KC7X7Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/8.0.27",
+      "path": "microsoft.entityframeworkcore/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2255,14 +2288,14 @@
         "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.8.0.27.nupkg.sha512",
+        "microsoft.entityframeworkcore.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/8.0.27": {
-      "sha512": "/pqkVwmVsMOePo58AlmpXCQOOsGTqMahgbANhmP7WZMd9PiXLnzVxU06R+HbW0u+YdZ4w4aBDvVg+vUpGKydJg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.29": {
+      "sha512": "z5JLj2mWCuxnhP7oP9udaHxOK5FQWPpvjXeTmCMjRRCYZ1k+gUlb9Vznx2LHSFXww4ZHjztKbxezNTTu/T6znw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/8.0.27",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2270,14 +2303,14 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.8.0.27.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.27": {
-      "sha512": "9hl8QNHrgOtidE7I5aom9ABcXCIjv1fnRxgNNC4PaA043zPte28ifvkW2KK91OoAYF7trZSmU1qYScTra3N7HA==",
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.29": {
+      "sha512": "rC/q2K3JGSKJpEraRDRJ3NUOH4e+CpwwCIbbKGXi87J6LuGdIg0+yggCSPCmV2PwSSlegZSg+le++O4IBRecLA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.27",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2285,14 +2318,14 @@
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "docs/PACKAGE.md",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.8.0.27.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/8.0.27": {
-      "sha512": "Pe+TpzQTow3Ql1UFcQ7M8fJ7dpzfW4gVYtY/wWLMfArWWpDfKkDWhmJS5d02YZnDIl9rtfw0eMGqLy40pezUWg==",
+    "Microsoft.EntityFrameworkCore.Design/8.0.29": {
+      "sha512": "109wTzveE4yG4aBbAgspGPd3DgVxqmDPyn3duOIgPemQkdm8Y+g6ZSQngvOou3YwgLEYat1+JHVyzdRbLp24BQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/8.0.27",
+      "path": "microsoft.entityframeworkcore.design/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2301,14 +2334,14 @@
         "build/net8.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.8.0.27.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/8.0.27": {
-      "sha512": "ulztr0Jcvzg6bbL8wuwshVKcuU4GMeObvSJopg9KM/MBHwEcOroawdoYOJKmcmfmIp2dfXCl0n/qNRLfBfJwZg==",
+    "Microsoft.EntityFrameworkCore.Relational/8.0.29": {
+      "sha512": "2Hr88wB21JLwKhccXYM+7gy9hdtLNM0x5YcQs+Fxa+TYmWqaLof9HxOpgJytR2YOlJKcNM+Ee67GR6bqTXyZBQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/8.0.27",
+      "path": "microsoft.entityframeworkcore.relational/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2316,14 +2349,14 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.8.0.27.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/8.0.27": {
-      "sha512": "zOjIHog/Irl4rhNfJ8oH9javl/P5WH8xp152ETEQ3CW+8i7btG4+kGk0pasVGlArAuiGUtXDmRmj4k+NTGzRcA==",
+    "Microsoft.EntityFrameworkCore.SqlServer/8.0.29": {
+      "sha512": "s6pKoBJ9Q/1tfc0LrklhYtd0m4LW0RxultbVHs9ra62Bd0C1QwaQ9VHQj+n869LHqXiPiL/tS0/dvh1BDJz8Jg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/8.0.27",
+      "path": "microsoft.entityframeworkcore.sqlserver/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2331,7 +2364,7 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.8.0.27.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
@@ -3992,7 +4025,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'AutoMapper' 12.0.1 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net8.0"
