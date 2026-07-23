@@ -30,9 +30,9 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
 
     public async Task<ResponseModel<ProductSummaryDto>> Handle(CreateProductCommand request, CancellationToken cancellationToken)
     {
-      var dto = request.Dto;
+      var requestDto = request.Dto;
 
-      var existingProduct = await _repository.ExistAsync(dto.CodTrade.Trim().ToLower());
+      var existingProduct = await _repository.ExistAsync(requestDto.CodTrade.Trim().ToLower());
 
       if(existingProduct)
         {
@@ -42,7 +42,7 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
             };
         }
 
-        var categoryExisting = await _categoryRepository.GetByIdAsync(dto.CategoryId);
+        var categoryExisting = await _categoryRepository.GetByIdAsync(requestDto.CategoryId);
         if(categoryExisting is null)
         {
             return new ResponseModel<ProductSummaryDto>
@@ -51,8 +51,8 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
             };
         }
 
-        var locations = await _locationRepository.GetByIdsAsync(dto.AllowedLocations);
-        if(locations.Count != dto.AllowedLocations.Count)
+        var locations = await _locationRepository.GetByIdsAsync(requestDto.AllowedLocations);
+        if(locations.Count != requestDto.AllowedLocations.Count)
         {
             return new ResponseModel<ProductSummaryDto>
             {
@@ -61,7 +61,7 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
             };
         }
 
-        var typeIdExisting = await _typeRepository.GetByIdAsync(dto.TypeId);
+        var typeIdExisting = await _typeRepository.GetByIdAsync(requestDto.TypeId);
         if(typeIdExisting is null)
         {
             return new ResponseModel<ProductSummaryDto>
@@ -70,19 +70,19 @@ public class CreateproductHandler : IRequestHandler<CreateProductCommand, Respon
             };
         }
 
-        var dimensions = _mapper.Map<Dimensions>(dto.Dimensions);
+        var dimensions = _mapper.Map<Dimensions>(requestDto.Dimensions);
 
         var product = Product.Create(
-            codTrade: dto.CodTrade,
-            description: dto.Description,
-            codNcm: dto.CodNcm,
-            codSap: dto.CodSap,
-            notes: dto.Notes,
+            codTrade: requestDto.CodTrade,
+            description: requestDto.Description,
+            codNcm: requestDto.CodNcm,
+            codSap: requestDto.CodSap,
+            notes: requestDto.Notes,
             dimensions: dimensions,
-            imgUrl: dto.ImgUrl,
+            imgUrl: requestDto.ImgUrl,
             allowedLocations: locations,
-            categoryId: dto.CategoryId,
-            typeId: dto.TypeId
+            categoryId: requestDto.CategoryId,
+            typeId: requestDto.TypeId
             );
 
         await _repository.AddAsync(product);

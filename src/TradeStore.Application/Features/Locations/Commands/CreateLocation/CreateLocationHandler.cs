@@ -20,9 +20,9 @@ public class CreateLocationHandler : IRequestHandler<CreateLocationCommand, Resp
 
     public async Task<ResponseModel<LocationResponseDto>> Handle(CreateLocationCommand request, CancellationToken cancellationToken)
     {
-        var dto = request.Dto;
+        var requesDto = request.Dto;
 
-        var existingLocation = await _repository.ExistsAsync(dto.LocationsName.Trim().ToLower());
+        var existingLocation = await _repository.ExistsAsync(requesDto.LocationsName.Trim().ToLower());
 
         if(existingLocation)
         {
@@ -33,7 +33,7 @@ public class CreateLocationHandler : IRequestHandler<CreateLocationCommand, Resp
             };
         }
 
-        var location = Location.Create(dto.LocationsName);
+        var location = Location.Create(requesDto.LocationsName);
 
         await _repository.AddAsync(location);
         var locationResponse = _mapper.Map<LocationResponseDto>(location);

@@ -24,7 +24,7 @@ public class UpdateCategoriesHandler : IRequestHandler<UpdateCategoriesCommand, 
         if(category is null)
             return new ResponseModel<CategoryResponseDto>
             {
-                Mensagem = "Categoria não encontrada",
+                Mensagem = "Category not found",
                 Status = false
             };
         
@@ -36,7 +36,7 @@ public class UpdateCategoriesHandler : IRequestHandler<UpdateCategoriesCommand, 
         return new ResponseModel<CategoryResponseDto>
         {
             Dados = categoryResponse,
-            Mensagem = "Categoria atualizada com sucesso"
+            Mensagem = "Category successfully updated"
         };
     }
 }
